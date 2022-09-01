@@ -23,6 +23,11 @@ public class CourseSpringDataJpaCommandLineRunner implements CommandLineRunner {
 		System.out.println(repository.findById(8L));
 		System.out.println(repository.findById(9L));
 
+		System.out.println(repository.findAll());
+
+		System.out.println(repository.count());
+
+		System.out.println(repository.findByAuthor("in28minutes"));
 	}
 
 }
